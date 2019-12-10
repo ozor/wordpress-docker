@@ -1,0 +1,8 @@
+.tmp_staging
+.idea
+
+local/*
+
+docker/nginx/log/access.log
+docker/nginx/log/error.log
+
