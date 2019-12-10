@@ -12,6 +12,12 @@ docker/nginx/log/error.log
 !/wordpress/wp-content/
 !/wordpress/wp-config.php
 
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+/wordpress/wp-content/*
+!/wordpress/wp-content/plugins/
+!/wordpress/wp-content/themes/
+
 # ignore node dependency directories
 node_modules/
 
