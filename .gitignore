@@ -6,6 +6,11 @@ local/*
 docker/nginx/log/access.log
 docker/nginx/log/error.log
 
+# Ignore everything in the root except the "wp-content" directory.
+/wordpress/*
+!.gitignore
+!/wordpress/wp-content/
+!/wordpress/wp-config.php
 
 # ignore node dependency directories
 node_modules/
@@ -14,7 +19,6 @@ node_modules/
 *.log
 
 # track these files, if they exist
-!.gitignore
 !.editorconfig
 !README.md
 !CHANGELOG.md
