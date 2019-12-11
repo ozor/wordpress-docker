@@ -20,6 +20,7 @@ docker/nginx/log/error.log
 !/wordpress/wp-content/plugins/
 !/wordpress/wp-content/themes/
 
+/wordpress/wp-content/plugins/*
 /wordpress/wp-content/themes/*
 
 
