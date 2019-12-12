@@ -3,8 +3,12 @@
 
 local/*
 
+
+# Files related to Docker and/or docker-compose
+
 docker/nginx/log/access.log
 docker/nginx/log/error.log
+
 
 
 # /wordpress/ directory
@@ -12,6 +16,7 @@ docker/nginx/log/error.log
 # Ignore everything in the root except the "wp-content" directory.
 /wordpress/*
 !/wordpress/wp-content/
+!/wordpress/distributive/
 !/wordpress/wp-config.php
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
@@ -22,6 +27,7 @@ docker/nginx/log/error.log
 
 /wordpress/wp-content/plugins/*
 /wordpress/wp-content/themes/*
+
 
 
 # ignore node dependency directories
@@ -36,3 +42,5 @@ node_modules/
 !README.md
 !CHANGELOG.md
 !composer.json
+
+!docker-compose.yml
